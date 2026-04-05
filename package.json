@@ -1,0 +1,28 @@
+{
+  "name": "can-you-run-it",
+  "version": "1.0.0",
+  "description": "Can You Run It? (Honestly) - Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.canyourunit.honestly",
+    "productName": "Can You Run It (Honestly)",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "app/**/*"
+    ]
+  }
+}
